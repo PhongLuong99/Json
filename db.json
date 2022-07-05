@@ -12,11 +12,25 @@
 
     },
 
-    "production":{
+    "user":{
         "number": 1,
         "title": "HUNG",
         "description": "hahahaah"
 
+    },
+    
+    "inputs": {
+        "id": 1,
+        "title": "HUNG",
+        "description": "hahahaah"
+    },
+
+    "status":{ 
+        "id": 1,
+        "title": "HUNG",
+        "description": "hahahaah"
+
     }
+
 }
     
