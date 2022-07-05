@@ -10,6 +10,13 @@
     
     ]
 
+    },
+
+    "production":{
+        "number": 1,
+        "title": "HUNG",
+        "description": "tatatattata"
+
     }
 }
     
