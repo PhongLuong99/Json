@@ -21,22 +21,22 @@
             }
     ],
     
-    "inputs":[ 
+    "inputs":
         {
         "id": 1,
         "title": "HUNG",
         "description": "hahahaah"
     }
-],
+,
 
-    "status":[
+    "status":
         { 
         "id": 1,
         "title": "HUNG",
         "description": "hahahaah"
 
     }
-]
+
 
 }
     
