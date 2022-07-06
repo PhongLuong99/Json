@@ -12,25 +12,29 @@
 
     },
 
-    "users":{
+    "users":
+        [
+            {
         "number": 1,
         "title": "HUNG",
         "description": "hahahaah"
+            }
+    ]
 
-    },
+    ,
     
-    "inputs": {
+    "inputs":[ {
         "id": 1,
         "title": "HUNG",
         "description": "hahahaah"
-    },
+    }],
 
-    "status":{ 
+    "status":[{ 
         "id": 1,
         "title": "HUNG",
         "description": "hahahaah"
 
-    }
+    }]
 
 }
     
