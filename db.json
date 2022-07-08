@@ -1,36 +1,45 @@
 {
-    "yeah":{
+    "yeah":
     
-     "messages":[        
+     [        
         {
             "id": 1,
-            "name": "VINH",
+            "name": "Tên",
             "description": " llala "
         }
     
-    ]
-
-    },
+    ],
 
     "users":
         [
             {
-                "id":0
+                "id": 1,
+                "name": "Vinh",
+                "categoryId" :1
+            },
+            {
+                "id": 2,
+                "name" : "Hung",
+                "categoryId" :1
+            },
+            {
+                "id": 3,
+                "name": "Phong",
+                "categoryId":1
             }
-    ],
+        ],
     
     "inputs":[
         {
-       
-    }
-],
+
+        }
+    ],
 
     "status":
         { 
         "id": 1,
         "title": "HUNG",
         "description": "hahahaah"
-
     }
 
 
