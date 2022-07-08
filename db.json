@@ -20,12 +20,12 @@
             {
                 "id": 2,
                 "name" : "Hung",
-                "categoryId" :1
+                "categoryId" :2
             },
             {
                 "id": 3,
                 "name": "Phong",
-                "categoryId":1
+                "categoryId":3
             }
         ],
     
