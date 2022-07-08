@@ -15,17 +15,17 @@
             {
                 "id": 1,
                 "name": "Vinh",
-                "categoryId" :1
+                "yeahId" :1
             },
             {
                 "id": 2,
                 "name" : "Hung",
-                "categoryId" :2
+                "yeahId" :2
             },
             {
                 "id": 3,
                 "name": "Phong",
-                "categoryId":3
+                "yeahId":3
             }
         ],
     
