@@ -17,7 +17,7 @@ server.use(jsonServer.bodyParser)
 server.use((req, res, next) => {
   if (req.method === 'POST') {
     req.body.createdAt = Date.now()
-    req.body.updatedAt = Date.UTC.toString(22, 1, 2, 3, 4, 5)
+    req.body.updatedAt = Date.UTC.toUTCString(22, 1, 2, 3, 4, 5)
   }
   // Continue to JSON Server router
   next()
