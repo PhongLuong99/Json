@@ -11,7 +11,7 @@ server.get('/echo', (req, res) => {
   res.jsonp(req.query)
 })
 
-var d = Date(Date.now());
+var d = Date();
 a = d.toString()
 // To handle POST, PUT and PATCH you need to use a body-parser
 // You can use the one used by JSON Server
