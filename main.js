@@ -16,7 +16,7 @@ server.get('/echo', (req, res) => {
 server.use(jsonServer.bodyParser)
 server.use((req, res, next) => {
   if (req.method === 'POST') {
-    req.body.createdAt = Date.now()
+    req.body.createdAt = Date.timeNow()
     req.body.updatedAt = Date.UTC()
   }
   // Continue to JSON Server router
