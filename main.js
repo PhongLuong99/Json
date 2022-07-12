@@ -21,8 +21,8 @@ function calcTime(offset){
   return a.toISOString();
 
 }
-var b = Date.now();
-c = b.toISOString();
+var b = Date(Date.now());
+c = b.toString();
 // To handle POST, PUT and PATCH you need to use a body-parser
 // You can use the one used by JSON Server
 server.use(jsonServer.bodyParser)
