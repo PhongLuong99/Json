@@ -10,23 +10,29 @@ server.use(middlewares)
 server.get('/echo', (req, res) => {
   res.jsonp(req.query)
 })
+
+
+//Convert the local time to another timezone with this JavaScript
 function calcTime(offset){
+  
+  var d = new Date();
+  var utc = d.getTime()+(d.getTimezoneOffset()*60000);
+  var a = new Date(utc+(3600000*offset))
+  return a.toISOString();
 
-
-var d = new Date();
-var utc = d.getTime()+(d.getTimezoneOffset()*60000);
-
-var a = new Date(utc+(3600000*offset))
-return a.toISOString();
 }
 // To handle POST, PUT and PATCH you need to use a body-parser
 // You can use the one used by JSON Server
 server.use(jsonServer.bodyParser)
 server.use((req, res, next) => {
   if (req.method === 'POST') {
-    req.body.createdAt = Date.now()
+    //req.body.createdAt = Date.now()
     req.body.updatedAt = calcTime('+7')
 
+  }
+  if(req.method === 'PUT')  {
+
+    req.body.time = calcTime('+7')
   }
   // Continue to JSON Server router
   next()
