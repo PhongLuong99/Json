@@ -10,9 +10,13 @@ server.use(middlewares)
 server.get('/echo', (req, res) => {
   res.jsonp(req.query)
 })
+let offset;
+offset = +7;
+var d = new Date();
+var utc = d.getTime()+(d.getTimezoneOffset()*60000);
 
-var d = Date();
-a = d.toString()
+var a = new Date(utc+(3600000*offset))
+return a.toLocaleString();
 // To handle POST, PUT and PATCH you need to use a body-parser
 // You can use the one used by JSON Server
 server.use(jsonServer.bodyParser)
