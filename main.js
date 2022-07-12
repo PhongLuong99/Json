@@ -21,12 +21,14 @@ function calcTime(offset){
   return a.toISOString();
 
 }
+var b = Date.now();
+c = b.toISOString();
 // To handle POST, PUT and PATCH you need to use a body-parser
 // You can use the one used by JSON Server
 server.use(jsonServer.bodyParser)
 server.use((req, res, next) => {
   if (req.method === 'POST') {
-    req.body.createdAt = Date.now()
+    req.body.createdAt = c
     req.body.updatedAt = calcTime('+7')
 
   }
