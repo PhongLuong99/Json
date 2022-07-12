@@ -17,7 +17,7 @@ var d = new Date();
 var utc = d.getTime()+(d.getTimezoneOffset()*60000);
 
 var a = new Date(utc+(3600000*offset))
-return a.toLocaleString();
+return a.toISOString();
 }
 // To handle POST, PUT and PATCH you need to use a body-parser
 // You can use the one used by JSON Server
