@@ -12,21 +12,7 @@
 
     "users":
         [
-            {
-                "id": 1,
-                "name": "Vinh",
-                "yeahId" :1
-            },
-            {
-                "id": 2,
-                "name" : "Hung",
-                "yeahId" :2
-            },
-            {
-                "id": 3,
-                "name": "Phong",
-                "yeahId":3
-            }
+            
         ],
     
     "inputs":[
